@@ -1,2 +1,5 @@
 # alx-higher_level_programming
-ALX python programming
+
+## Introduction
+It will include the following tasks:
+* 0x00. Python - Hello, World
