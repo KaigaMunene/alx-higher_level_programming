@@ -1,2 +1,1 @@
-#!/usr/bin/bash
-python $PYFILE
+#!/usr/bin/env $PYFILE
