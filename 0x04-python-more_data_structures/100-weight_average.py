@@ -1,4 +1,4 @@
-#!/bin/usr/python3
+#!/usr/bin/python3
 def weight_average(my_list=[]):
     top = bottom = 0
 
