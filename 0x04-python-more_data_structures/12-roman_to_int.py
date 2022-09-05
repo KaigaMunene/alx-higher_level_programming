@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 def value(r):
+    if (r == "" and r is None):
+        return 0
     if (r == 'I'):
         return 1
     if (r == 'V'):
@@ -14,8 +16,6 @@ def value(r):
         return 500
     if (r == 'M'):
         return 1000
-    if (r == "" or r is None):
-        return 0
     return -1
 
 
