@@ -14,7 +14,10 @@ def value(r):
         return 500
     if (r == 'M'):
         return 1000
+    if (r == "" or r is None):
+        return 0
     return -1
+
 
 def roman_to_int(roman_string):
     res = 0
