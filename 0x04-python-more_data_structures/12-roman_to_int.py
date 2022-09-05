@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def value(r):
-    if (r == "" and r is None):
+    if not r:
         return 0
     if (r == 'I'):
         return 1
