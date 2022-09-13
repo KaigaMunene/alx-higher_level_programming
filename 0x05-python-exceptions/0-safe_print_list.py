@@ -3,8 +3,8 @@ def safe_print_list(my_list=[], x=0 ):
     count = 0
     while count < x:
         try:
-            print(next(my_list))
-        except StopIteration:
-            print("You have reached the end!")
-            break
+            print("{}".format(my_list[count]), end="")
+        except:
+            print()
+            return (count)
         count += 1
