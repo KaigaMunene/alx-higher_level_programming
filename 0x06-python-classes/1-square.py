@@ -3,4 +3,6 @@
 
 class Square:
     """ This class defines a square object """
-    pass
+    def __init__(self, size):
+        """ Constructor for the Square class"""
+        self.__size = size
