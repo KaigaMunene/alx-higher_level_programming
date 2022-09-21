@@ -5,6 +5,7 @@
 class Rectangle:
     """ This class that defines a rectangle object """
     number_of_instances = 0
+    print_symbol = "#"
 
     def __init__(self, width=0, height=0):
         """ Constructor for the Rectangle class"""
@@ -58,7 +59,7 @@ class Rectangle:
 
         shape = []
         for i in range(self.__height):
-            [shape.append('#') for j in range(self.__width)]
+            [shape.append(Rectangle.print_symbol) for j in range(self.__width)]
             if i != self.__height - 1:
                 shape.append("\n")
         return ("".join(shape))
