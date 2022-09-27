@@ -1,17 +1,19 @@
 #!/usr/bin/python3
-"""
-Module content
-100-my_int - Create a MyInt class that inherits from int, flip == and !=
-"""
+"""Contains a class `MyInt` that inherits from `int`"""
 
 
 class MyInt(int):
+    """Inherits from int base class"""
+    def __init__(self, value):
+        """Initialize value"""
+        self.value = value
 
-    # Reference http://thepythonguru.com/python-operator-overloading/
-    def __eq__(self, other):
-        """ Overrides == operator to give != results """
-        return (not super().__eq__(other))
+    def __ne__(self, x):
+        """not equal to comparison"""
+        if self.value is x:
+            return True
 
-    def __ne__(self, other):
-        """ Overrides != operator to give == results """
-        return (not super().__ne__(other))
+    def __eq__(self, x):
+        """equal to comparison"""
+        return not self.__ne__(x)
+
