@@ -16,4 +16,3 @@ class MyInt(int):
     def __eq__(self, x):
         """equal to comparison"""
         return not self.__ne__(x)
-
