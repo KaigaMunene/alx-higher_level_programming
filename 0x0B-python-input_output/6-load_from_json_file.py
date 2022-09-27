@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" 
+"""
 Module content
 
 creates an Object from a “JSON file”
