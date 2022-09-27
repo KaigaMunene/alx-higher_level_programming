@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 Module content
-9-add_item   - Add all arguments to a Python list, and then save to a file
+Add all arguments to a Python list, and then save to a file
 """
 import os.path
 from sys import argv
