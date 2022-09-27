@@ -1,12 +1,12 @@
 #!/usr/bin/pyhton3
+#!/usr/bin/python3
 """
 Module content
-
-contains function to read UTF8 text filles and print to stdout
+0-read_file   - Contains function to read UTF8 text files and print to stdout
 """
 
 
 def read_file(filename=""):
-    """ Function that reads a text file and prints it to stdout """
+    """ Read UTF8 text files and print content to stdout """
     with open(filename, "r", encoding="utf-8") as f:
-        print(f.read(), end="")
+            print(f.read(), end="")
