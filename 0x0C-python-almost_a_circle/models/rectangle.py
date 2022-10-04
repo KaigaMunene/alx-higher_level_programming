@@ -55,7 +55,7 @@ class Rectangle(Base):
         """ Setter for 'x' attribute """
         if type(value) is not int:
             raise TypeError("x must be an integer")
-        if value <= 0:
+        if value < 0:
             raise ValueError("x must be > 0")
 
         self.__x = value
@@ -70,13 +70,13 @@ class Rectangle(Base):
         """ Setter for 'y' attribute """
         if type(value) is not int:
             raise TypeError("height must be an integer")
-        if value <= 0:
+        if value < 0:
             raise ValueError("height must be > 0")
 
         self.__y = value
 
     def area(self):
-        """ Method to calculate area """
+        """ calculates the area of a rectangle """
         return self.__width * self.__height
 
     def display(self):
