@@ -6,9 +6,9 @@ from models.base import Base
 
 
 class Rectangle(Base):
-    """ rectangle inherits from base """
+    """ A representation of a rectangle """
     def __init__(self, width, height, x=0, y=0, id=None):
-        """ initialize contructor method """
+        """ initializes the rectangle """
         self.width = width
         self.height = height
         self.x = x
@@ -57,7 +57,7 @@ class Rectangle(Base):
         if type(value) is not int:
             raise TypeError("x must be an integer")
         if value < 0:
-            raise ValueError("x must be > 0")
+            raise ValueError("x must be >= 0")
 
         self.__x = value
 
@@ -70,9 +70,9 @@ class Rectangle(Base):
     def y(self, value):
         """ Setter for 'y' attribute """
         if type(value) is not int:
-            raise TypeError("height must be an integer")
+            raise TypeError("y must be an integer")
         if value < 0:
-            raise ValueError("height must be > 0")
+            raise ValueError("y must be >= 0")
 
         self.__y = value
 
