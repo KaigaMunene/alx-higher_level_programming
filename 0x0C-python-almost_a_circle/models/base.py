@@ -1,4 +1,4 @@
-#!/bin/usr/python3
+#!/usr/bin/python3
 """
 Module content
 base.py - create a Base class for other classes to inherit from
