@@ -111,7 +111,7 @@ class Base:
                     cfile, fieldnames={'id', 'width', 'height', 'x', 'y'})
             elif cls.__name__ == "Square":
                 reader = csv.DictReader(
-                    cfile, fieldnames={'id', 'width', 'x', 'y'})
+                    cfile, fieldnames={'id', 'size', 'x', 'y'})
 
             instances = []
             for instance in reader:
