@@ -96,7 +96,7 @@ class Base:
                         writer.writerow(
                             [obj.id, obj.width, obj.height, obj.x, obj.y])
                     if cls.__name__ == "Square":
-                        writer.writerow([obj.id, obj.size, obj.x, obj.y])
+                        writer.writerow([obj.id, obj.width, obj.x, obj.y])
 
     @classmethod
     def load_from_file_csv(cls):
@@ -111,7 +111,7 @@ class Base:
                     cfile, fieldnames={'id', 'width', 'height', 'x', 'y'})
             elif cls.__name__ == "Square":
                 reader = csv.DictReader(
-                    cfile, fieldnames={'id', 'size', 'x', 'y'})
+                    cfile, fieldnames={'id', 'width', 'x', 'y'})
 
             instances = []
             for instance in reader:
