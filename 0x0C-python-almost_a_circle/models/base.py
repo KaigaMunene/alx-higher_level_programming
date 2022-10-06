@@ -96,7 +96,7 @@ class Base:
                         writer.writerow(
                             [obj.id, obj.width, obj.height, obj.x, obj.y])
                     if cls.__name__ == "Square":
-                        writer.writerow([obj.id, obj.width, obj.x, obj.y])
+                        writer.writerow([obj.id, obj.size, obj.x, obj.y])
 
     @classmethod
     def load_from_file_csv(cls):
