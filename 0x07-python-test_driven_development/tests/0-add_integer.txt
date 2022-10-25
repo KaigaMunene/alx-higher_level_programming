@@ -21,11 +21,14 @@ It works with normal numbers
 
 It also works with floating numbers
 
->>> add_integer(9, 5.55)
-14
+>>> add_integer(12.3, 45.6)
+57
 
->>> add_integer(9.786, 5.868)
-14
+>>> add_integer(12.3, 4)
+16
+
+>>> add_integer(1, 45.6)
+46
 
 It also works with one argument
 
