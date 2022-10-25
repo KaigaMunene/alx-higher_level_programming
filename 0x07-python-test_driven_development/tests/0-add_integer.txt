@@ -19,7 +19,7 @@ It works with normal numbers
 >>> add_integer(9, 5)
 14
 
-It also worksl with floating numbers
+It also works with floating numbers
 
 >>> add_integer(9, 5.55)
 14
