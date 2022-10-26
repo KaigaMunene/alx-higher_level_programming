@@ -5,7 +5,6 @@ matrix must be a list of lists of int or float,
 otherwise raise a TypeError exception.
 Returns: A new matrix
 """
-from typing import Type
 
 
 def matrix_divided(matrix, div):
