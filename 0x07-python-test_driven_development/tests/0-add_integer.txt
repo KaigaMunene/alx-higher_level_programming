@@ -1,25 +1,7 @@
-===============================
- How to Use 0-add_integer.py
-  ===============================
-
-This library contains only one function called
-
-``add_integer(a, b=98):``
-
-parameter `b` contains a default value of 98
-
-Numbers:
-
-``add_integer()`` computes returns the sum of it's arguments
-
 >>> add_integer = __import__('0-add_integer').add_integer
 
-It works with normal numbers
-
->>> add_integer(9, 5)
-14
-
-It also works with floating numbers
+>>> add_integer(5, 10)
+15
 
 >>> add_integer(12.3, 45.6)
 57
@@ -30,24 +12,22 @@ It also works with floating numbers
 >>> add_integer(1, 45.6)
 46
 
-It also works with one argument
-
->>> add_integer(2)
-100
-
-Strings:
-
-``add_integer()`` doesnt't work with other type other that integers
-and floating point numbers
-
->>> add_integer(4, "holberton") #doctest: +ELLIPSIS
+>>> add_integer("test", 3)
 Traceback (most recent call last):
-TypeError: ... must be an integer
-
->>> add_integer("alx")
-Traceback (most recent call last):
+...
 TypeError: a must be an integer
 
->>> add_integer(["a", 3, 6], (2, 6, 9))
+>>> add_integer(3, "test")
 Traceback (most recent call last):
-TypeError: a must be an integer
+...
+TypeError: b must be an integer
+
+>>> add_integer(3)
+Traceback (most recent call last):
+...
+TypeError: add_integer() missing 1 required positional argument: 'b'
+
+>>> add_integer()
+Traceback (most recent call last):
+...
+TypeError: add_integer() missing 2 required positional arguments: 'a' and 'b'
