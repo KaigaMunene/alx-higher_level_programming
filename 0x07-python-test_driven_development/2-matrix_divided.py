@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-Divides all elements of a matrix. matrix must be a list of lists of int or float,
+Divides all elements of a matrix.
+matrix must be a list of lists of int or float,
 otherwise raise a TypeError exception.
 Returns: A new matrix
 """
