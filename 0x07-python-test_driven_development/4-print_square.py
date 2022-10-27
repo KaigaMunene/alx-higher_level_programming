@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 """
-prints concatenation of "My name is " with the 2 string arguments
+prints out a square
 """
 
 
 def print_square(size):
     """
-    Prints out "My name is " + first_name + last_name
+    Prints out a square shape
     """
     if not isinstance(size, int):
         raise TypeError("size must be an integer")
