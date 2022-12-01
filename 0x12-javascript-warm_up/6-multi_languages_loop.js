@@ -2,6 +2,6 @@
 
 const strings = ['C is fun', 'Python is cool', 'Javascript is amazing'];
 
-for (let i in strings) {
+for (const i in strings) {
   console.log(strings[i]);
 }
