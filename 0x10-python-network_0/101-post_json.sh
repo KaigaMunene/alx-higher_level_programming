@@ -1,3 +1,3 @@
 #!/bin/bash
-# Reference: https://gist.github.com/subfuzion/08c5d85437d5d4f00e58
-curl -X POST -sH "Content-Type: application/json" -d "@$2" "$1"
+# Send a Post equest to URL and display the response
+curl -s -H "Content-Type: application/json" -d "$(cat "$2")" "$1"
