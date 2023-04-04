@@ -6,7 +6,7 @@ from urllib import request
 
 if __name__ == "__main__":
     """ Make a request to https://intranet.hbtn.io/status """
-    with request.urlopen('https://intranet.hbtn.io/status') as response:
+    with request.urlopen('http://0.0.0.0:5050/status') as response:
         html = response.read()
 
     print("Body response:")
