@@ -1,16 +1,15 @@
 #!/usr/bin/python3
-"""A script that
-- fetches https://intranet.hbtn.io/status.
-- use urlib package
-"""
+""" Fetch response from URL using urllib package """
+
+from urllib import request
 
 
-if __name__ == '__main__':
-    import urllib.request
+if __name__ == "__main__":
+    """ Make a request to https://intranet.hbtn.io/status """
+    with request.urlopen('https://intranet.hbtn.io/status') as response:
+        html = response.read()
 
-    with urllib.request.urlopen('http://0.0.0.0:5050/status') as res:
-        content = res.read()
-        print("Body response:")
-        print("\t- type: {}".format(type(content)))
-        print("\t- content: {}".format(content))
-        print("\t- utf8 content: {}".format(content.decode('utf-8')))
+    print("Body response:")
+    print("\t- type: {}".format(type(html)))
+    print("\t- content: {}".format(html))
+    print("\t- utf8 content: {}".format(html.decode("utf8")))
