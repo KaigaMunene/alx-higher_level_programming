@@ -20,6 +20,6 @@ if __name__ == "__main__":
         if json["id"] and json["name"]:
             print("[{}] {}".format(json["id"], json["name"]))
         else:
-            print ("Not a valid JSON")
+            print("Not a valid JSON")
     else:
         print("No result")
