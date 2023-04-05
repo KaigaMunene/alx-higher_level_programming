@@ -1,13 +1,12 @@
 #!/usr/bin/python3
-""" Use the 'requests' package to make a request to specified URL """
-
-from requests import get
+"""Fetches https://intranet.hbtn.io/status"""
 
 
 if __name__ == "__main__":
-    """ Use 'requests' package to make a request to holberton intranet """
+    import requests
 
-    response = get("https://intranet.hbtn.io/status")
+    r = requests.get("https://intranet.hbtn.io/status")
+
     print("Body response:")
-    print("\t- type: {}".format(type(response.text)))
-    print("\t- content: {}".format(response.text))
+    print("\t- type: {}".format(type(r.text)))
+    print("\t- content: {}".format(r.text))
